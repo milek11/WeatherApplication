@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WeatherApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WeatherApp_jar</output-path>
+    <root id="archive" name="WeatherApp.jar">
+      <element id="module-output" name="WeatherApp" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20170516/json-20170516.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

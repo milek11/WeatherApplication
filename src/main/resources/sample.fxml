@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <ImageView fx:id="imageBackground" fitHeight="550.0" fitWidth="350.0">
+         <image>
+            <Image url="@weatherBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageWeather" fitHeight="179.0" fitWidth="178.0" layoutY="22.0" x="170.0" y="60.0" />
+      <ImageView fx:id="imageSmallIcons" fitHeight="77.0" fitWidth="297.0" layoutX="19.0" layoutY="319.0" visible="false">
+         <image>
+            <Image url="@icons_small.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonShowWeather" layoutX="230.0" layoutY="16.0" mnemonicParsing="false" opacity="0.8" prefHeight="28.0" prefWidth="88.0" text="Show Weather" textFill="#1b120a">
+         <font>
+            <Font name="Arial Narrow" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldCity" layoutX="31.0" layoutY="14.0" opacity="0.33" prefHeight="33.0" prefWidth="199.0" promptText="City">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="109.0" layoutY="259.0" prefHeight="60.0" prefWidth="62.0" progress="0.0" visible="false" />
+      <Label fx:id="labelTemperature" layoutX="31.0" layoutY="83.0" prefHeight="140.0" prefWidth="288.0" textFill="#fff0e0">
+         <font>
+            <Font name="Lao UI" size="120.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageArrow" layoutX="302.0" layoutY="311.0" visible="false" x="-2.0" y="14.0">
+         <image>
+            <Image url="@arrow_small.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelDescription" alignment="CENTER" layoutX="1.0" layoutY="262.0" prefHeight="33.0" prefWidth="334.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelHumidity" layoutX="43.0" layoutY="367.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSunrise" layoutX="109.0" layoutY="367.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSunset" layoutX="181.0" layoutY="367.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelWind" layoutX="245.0" layoutY="367.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCityName" layoutX="35.0" layoutY="47.0" prefHeight="26.0" prefWidth="192.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelWindDirection" alignment="CENTER" layoutX="298.0" layoutY="367.0" prefHeight="20.0" prefWidth="44.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTime" alignment="CENTER" layoutX="94.0" layoutY="437.0" prefHeight="45.0" prefWidth="148.0" textFill="#fff0e0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDate" alignment="CENTER" layoutX="127.0" layoutY="489.0" prefHeight="39.0" prefWidth="81.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
